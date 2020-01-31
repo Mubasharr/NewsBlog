@@ -9,5 +9,5 @@ class NewsBlog(models.Model):
     date = models.DateTimeField(default=timezone.now)
 
     def snippet(self):
-        return self.description[:150] + '-----'
+        return self.textfiled[:50] + '-----'
 
